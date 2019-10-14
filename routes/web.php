@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/', 'welcome');
+Route::view('/', 'home');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -26,3 +26,6 @@ Route::view('about', 'about');
 // Route::get('about', function () {
 //     return view('about');
 // });
+
+
+Route::get('customers', 'CustomersController@list');
